@@ -499,8 +499,10 @@ module Base
 			}
 		}
 
+		template = Bar/part/ExtraBumper,
 		template = Canvas/part/SoftTop,
 		template = Canvas/part/SoftTop2,
+		template = Canvas/part/RearSheet,
 		template = TrunkDoor,
 
 		part TrunkDoor

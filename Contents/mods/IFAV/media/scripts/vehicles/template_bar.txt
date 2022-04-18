@@ -1,0 +1,66 @@
+module Base
+{
+	model frontbar
+	{
+		mesh = vehicles/Vehicle_IFAV|ExtraBumper,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	template vehicle Bar
+		{
+		part ExtraBumper
+        	{
+
+			model ExtraBumper
+				{
+                		file = frontbar,
+				}
+		area = TruckBed,
+            category = bodywork,
+            itemType = Base.RearWindshield,
+            mechanicRequireKey = false,
+            window
+            {
+                openable = false,
+            }
+		table install
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:5,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		}
+	}	
+	
+}
