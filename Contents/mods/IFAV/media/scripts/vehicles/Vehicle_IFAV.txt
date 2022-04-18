@@ -7,21 +7,13 @@ module Base
 		invertX = FALSE,
 		scale = 1,
 	}
-	model IFAVDoorfront
+	model IFAVfront
 	{
 		mesh = vehicles/Vehicle_IFAV|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
-	model IFAVDoorrearwindshield
-	{
-		mesh = vehicles/Vehicle_IFAV|TrunkWindow_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = DoorTrunkBone 1.0,
-	}
-	model IFAVDoorwindowfrontright
+	model IFAVwindowfrontright
 	{
 		mesh = vehicles/Vehicle_IFAV|WindowFrontRight_obj,
 		shader = vehicle_noreflect,
@@ -29,7 +21,7 @@ module Base
 		scale = 1,
 		boneWeight = WindowRightFrontBone 1.0,
 	}
-	model IFAVDoorwindowfrontleft
+	model IFAVwindowfrontleft
 	{
 		mesh = vehicles/Vehicle_IFAV|WindowFrontLeft_obj,
 		shader = vehicle_noreflect,
@@ -37,7 +29,7 @@ module Base
 		scale = 1,
 		boneWeight = WindowLeftFrontBone 1.0,
 	}
-	model IFAVDoor_door_left
+	model IFAV_door_left
 	{
 		mesh = vehicles/Vehicle_IFAV|DoorFrontLeft_obj,
 		shader = vehicle,
@@ -45,7 +37,7 @@ module Base
 		scale = 1,
 		boneWeight = DoorLeftFrontBone 1.0,
 	}
-	model IFAVDoor_door_right
+	model IFAV_door_right
 	{
 		mesh = vehicles/Vehicle_IFAV|DoorFrontRight_obj,
 		shader = vehicle,
@@ -53,7 +45,7 @@ module Base
 		scale = 1,
 		boneWeight = DoorRightFrontBone 1.0,
 	}
-	model IFAVDoorTrunk
+	model IFAVTrunk
 	{
 		mesh = vehicles/Vehicle_IFAV|DoorTrunk_obj,
 		shader = vehicle,
@@ -105,8 +97,8 @@ module Base
 		}
 
 		textureRust = Vehicles/Vehicle_GWagen_rust,
-		textureMask = Vehicles/Vehicle_GWagen_mask,
-		textureLights = Vehicles/Vehicle_GWagen_lights,
+		textureMask = Vehicles/Vehicle_IFAV_mask,
+		textureLights = Vehicles/Vehicle_IFAV_lights,
 		textureDamage1Shell = Vehicles/Vehicle_GWagen_damage,
 		textureDamage2Shell= Vehicles/Vehicle_GWagen_damage2,
 		textureDamage1Overlay = Vehicles/Vehicle_GWagen_blood,
@@ -371,7 +363,7 @@ module Base
 		{
 			model windshieldFront
 			{
-				file = IFAVDoorfront,
+				file = IFAVfront,
 			}
 
 			window
@@ -400,71 +392,11 @@ module Base
 		template = Window/part/WindowFrontLeft,
 		template = Window/part/WindowFrontRight,
 
-		part WindshieldRear
-		{
-			itemType = Base.RearWindshield,
-
-			model windshieldRear
-			{
-				file = IFAVDoorrearwindshield,
-			}
-
-			parent = TrunkDoor,
-
-			anim Close
-			{
-				anim = DTClosing,
-				reverse = TRUE,
-				rate = 1.5,
-			}
-
-			anim Open
-			{
-				anim = DTClosing,
-				reverse = FALSE,
-				rate = 1.0,
-			}
-
-			anim Closed
-			{
-				anim = DTClosing,
-				reverse = FALSE,
-				animate = FALSE,
-			}
-
-			anim Opened
-			{
-				anim = DTClosing,
-				reverse = TRUE,
-				animate = FALSE,
-			}
-
-			window
-			{
-				openable = false,
-			}
-
-			table install
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			table uninstall
-			{
-				recipes = Intermediate Mechanics,
-			}
-
-			lua
-			{
-				create = Vehicles.Create.Default,
-			}
-		}
-
 		part WindowFrontRight
 		{
 			model windowFR
 			{
-				file = IFAVDoorwindowfrontright,
+				file = IFAVwindowfrontright,
 			}
 
 			anim ClosedToOpen
@@ -481,7 +413,7 @@ module Base
 		{
 			model windowFL
 			{
-				file = IFAVDoorwindowfrontleft,
+				file = IFAVwindowfrontleft,
 			}
 
 			anim ClosedToOpen
@@ -499,33 +431,33 @@ module Base
 		{
 			model Default
 			{
-				file = IFAVDoor_door_right,
+				file = IFAV_door_right,
 			}
 
 			anim Close
 			{
-				anim = DRClosing,
+				anim = DTClosing.003,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = DRClosing,
+				anim = DTClosing.003,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = DRClosing,
+				anim = DTClosing.003,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = DRClosing,
+				anim = DTClosing.003,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -535,7 +467,7 @@ module Base
 		{
 			model Default
 			{
-				file = IFAVDoor_door_left,
+				file = IFAV_door_left,
 			}
 
 			anim Close
@@ -584,7 +516,7 @@ module Base
 
 			model Default
 			{
-				file = IFAVDoorTrunk,
+				file = IFAVTrunk,
 				offset = 0 0 0,
 				rotate = 0 0 0,
 				scale = 1.0,
