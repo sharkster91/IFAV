@@ -1,0 +1,42 @@
+module Base
+{
+
+    item IFAVDoor
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	IFAV Door,
+        Icon	=	CarDoorFront,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = IFAVDoor_WorldItem,
+    }
+
+        item IFAVWindshield
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	Windshield,
+        Icon	=	CarWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = iFAVWindshield_WorldItem,
+    }
+    
+        item IFAVCovers
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	40.0,
+        Type	=	Normal,
+        DisplayName	=	IFAV Covers,
+        Icon	=	CarWindshield,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = IFAVCovers_WorldItem,
+    }
+}
