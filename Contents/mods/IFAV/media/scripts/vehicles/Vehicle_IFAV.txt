@@ -9,13 +9,13 @@ module Base
 	}
 	model IFAVDoorfront
 	{
-		mesh = vehicles/Vehicle_IFAVDoor|Windshield_obj,
+		mesh = vehicles/Vehicle_IFAV|Windshield_obj,
 		shader = vehicle_noreflect,
 		scale = 1,
 	}
 	model IFAVDoorrearwindshield
 	{
-		mesh = vehicles/Vehicle_IFAVDoor|TrunkWindow_obj,
+		mesh = vehicles/Vehicle_IFAV|TrunkWindow_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -23,7 +23,7 @@ module Base
 	}
 	model IFAVDoorwindowfrontright
 	{
-		mesh = vehicles/Vehicle_IFAVDoor|WindowFrontRight_obj,
+		mesh = vehicles/Vehicle_IFAV|WindowFrontRight_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
@@ -31,31 +31,15 @@ module Base
 	}
 	model IFAVDoorwindowfrontleft
 	{
-		mesh = vehicles/Vehicle_IFAVDoor|WindowFrontLeft_obj,
+		mesh = vehicles/Vehicle_IFAV|WindowFrontLeft_obj,
 		shader = vehicle_noreflect,
 		static = FALSE,
 		scale = 1,
 		boneWeight = WindowLeftFrontBone 1.0,
 	}
-	model IFAVDoorwindowrearright
-	{
-		mesh = vehicles/Vehicle_IFAVDoor|WindowRearRight_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = WindowRightRearBone 1.0,
-	}
-	model IFAVDoorwindowrearleft
-	{
-		mesh = vehicles/Vehicle_IFAVDoor|WindowRearLeft_obj,
-		shader = vehicle_noreflect,
-		static = FALSE,
-		scale = 1,
-		boneWeight = WindowLeftRearBone 1.0,
-	}
 	model IFAVDoor_door_left
 	{
-		mesh = vehicles/Vehicle_IFAVDoor|DoorFrontLeft_obj,
+		mesh = vehicles/Vehicle_IFAV|DoorFrontLeft_obj,
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
@@ -63,31 +47,15 @@ module Base
 	}
 	model IFAVDoor_door_right
 	{
-		mesh = vehicles/Vehicle_IFAVDoor|DoorFrontRight_obj,
+		mesh = vehicles/Vehicle_IFAV|DoorFrontRight_obj,
 		shader = vehicle,
 		static = FALSE,
 		scale = 1,
 		boneWeight = DoorRightFrontBone 1.0,
 	}
-	model IFAVDoor_door_rearright
-	{
-		mesh = vehicles/Vehicle_IFAVDoor|DoorRearRight_obj,
-		shader = vehicle,
-		static = FALSE,
-		scale = 1,
-		boneWeight = DoorRightRearBone 1.0,
-	}
-	model IFAVDoor_door_rearleft
-	{
-		mesh = vehicles/Vehicle_IFAVDoor|DoorRearLeft_obj,
-		shader = vehicle,
-		static = FALSE,
-		scale = 1,
-		boneWeight = DoorLeftRearBone 1.0,
-	}
 	model IFAVDoorTrunk
 	{
-		mesh = vehicles/Vehicle_IFAVDoor|DoorTrunk_obj,
+		mesh = vehicles/Vehicle_IFAV|DoorTrunk_obj,
 		shader = vehicle,
 		scale = 1,
 		static = FALSE,
