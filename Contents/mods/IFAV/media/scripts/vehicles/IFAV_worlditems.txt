@@ -1,24 +1,31 @@
 module Base
 {
 
-		model IFAVFrontRightDoor_WorldItem
+		model IFAVDoor_WorldItem
 	{
-		mesh = WorldItems/IFAVFrontRightDoor_WorldItem.
-		texture = WorldItems/XM93Woodland,
+		mesh = WorldItems/IFAVDoor_WorldItem,
+		texture = WorldItems/IFAV,
 		scale = 0.5,
 	}
 
 		model IFAVWindshield_WorldItem
 	{
-		mesh = WorldItems/XM93Wheel_WorldItem,
-		texture = WorldItems/XM93Wheel,
+		mesh = WorldItems/IFAVWindShield_WorldItem,
+		texture = WorldItems/IFAV,
 		scale = 0.5,
 	}
 
 		model IFAVCovers_WorldItem
 	{
 		mesh = WorldItems/IFAVCovers_WorldItem,
-		texture = WorldItems/XM93Wheel,
+		texture = WorldItems/IFAV,
+		scale = 0.5,
+	}
+
+		model IFAVCanvasCover_WorldItem
+	{
+		mesh = WorldItems/IFAVCanvasCover_WorldItem,
+		texture = WorldItems/IFAV,
 		scale = 0.5,
 	}
 }

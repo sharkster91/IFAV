@@ -19,24 +19,24 @@ module Base
         DisplayCategory = VehicleMaintenance,
         Weight	=	15.0,
         Type	=	Normal,
-        DisplayName	=	Windshield,
+        DisplayName	=	IFAV Retractable Windshield,
         Icon	=	CarWindshield,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = iFAVWindshield_WorldItem,
+        WorldStaticModel = IFAVWindshield_WorldItem,
     }
     
-        item IFAVCovers
+        item IFAVSideCovers
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	40.0,
         Type	=	Normal,
-        DisplayName	=	IFAV Covers,
+        DisplayName	=	IFAV Side Covers,
         Icon	=	CarWindshield,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = IFAVCovers_WorldItem,
+        WorldStaticModel = IFAVSideCovers_WorldItem,
     }
 }
