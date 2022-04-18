@@ -97,8 +97,8 @@ module Base
 		}
 
 		textureRust = Vehicles/Vehicle_GWagen_rust,
-		textureMask = Vehicles/Vehicle_GWagen_mask,
-		textureLights = Vehicles/Vehicle_GWagen_lights,
+		textureMask = Vehicles/Vehicle_IFAV_mask,
+		textureLights = Vehicles/Vehicle_IFAV_lights,
 		textureDamage1Shell = Vehicles/Vehicle_GWagen_damage,
 		textureDamage2Shell= Vehicles/Vehicle_GWagen_damage2,
 		textureDamage1Overlay = Vehicles/Vehicle_GWagen_blood,
