@@ -1,0 +1,5 @@
+IG_UI_EN = {
+    IGUI_VehicleNameIFAV = "Interim Fast Attack Vehicle",
+    IGUI_VehicleNameIFAV2 = "Interim Fast Attack Vehicle",
+    IGUI_VehiclePartSideContainers = "",
+}

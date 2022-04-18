@@ -2,7 +2,7 @@
 <animNode>
 	<m_Name>IFAVRight</m_Name>
 	<m_SpeedScale>0.80</m_SpeedScale>
-	<m_AnimName>IFAVRightIdlePassenger</m_AnimName>
+	<m_AnimName>BobIFAVLeftIdlePassenger</m_AnimName>
 	<m_BlendTime>0.20</m_BlendTime>
 	<m_Conditions>
 		<m_Name>VehicleScriptName</m_Name>
