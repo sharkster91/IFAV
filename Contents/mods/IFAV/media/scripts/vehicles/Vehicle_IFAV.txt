@@ -436,28 +436,28 @@ module Base
 
 			anim Close
 			{
-				anim = DTClosing.003,
+				anim = WindowFrontRightClosing,
 				reverse = TRUE,
 				rate = 2.0,
 			}
 
 			anim Open
 			{
-				anim = DTClosing.003,
+				anim = WindowFrontRightClosing,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = DTClosing.003,
+				anim = WindowFrontRightClosing,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = DTClosing.003,
+				anim = WindowFrontRightClosing,
 				reverse = TRUE,
 				animate = FALSE,
 			}
@@ -499,7 +499,8 @@ module Base
 			}
 		}
 
-
+		template = Canvas/part/SoftTop,
+		template = Canvas/part/SoftTop2,
 		template = TrunkDoor,
 
 		part TrunkDoor
