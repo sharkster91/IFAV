@@ -20,10 +20,6 @@ module Base
             category = bodywork,
             itemType = Base.RearWindshield,
             mechanicRequireKey = false,
-            window
-            {
-                openable = false,
-            }
 		table install
             {
                 items
