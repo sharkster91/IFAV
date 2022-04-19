@@ -1,5 +1,7 @@
 IG_UI_EN = {
     IGUI_VehicleNameIFAV = "Interim Fast Attack Vehicle",
-    IGUI_VehicleNameIFAV2 = "Interim Fast Attack Vehicle",
-    IGUI_VehiclePartSideContainers = "",
+    IGUI_VehiclePartExtraBumper = "IFAV Front Bumper",
+    IGUI_VehiclePartSoftTop = "IFAV Front Soft Top",
+    IGUI_VehiclePartSoftTop2 = "IFAV Rear Soft Top",
+    IGUI_VehiclePartRearSheet = "IFAV Sheet",
 }

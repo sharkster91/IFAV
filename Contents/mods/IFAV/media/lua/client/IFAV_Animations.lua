@@ -8,12 +8,16 @@ local function IFAV_Enter(player)
     local vehicleName = vehicle:getScriptName()
     local seat = vehicle:getSeat(player)
     if not seat then return end
-	if seat == 1 and vehicleName:contains("Base.IFAV") then		
-		player:SetVariable("VehicleScriptName", "IFAVSit")
+	if seat == 2 and vehicleName:contains("Base.IFAV") then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger")
 		return
 	end
-	if seat == 2 and vehicleName:contains("Base.IFAV") then		
-		player:SetVariable("VehicleScriptName", "IFAVRight")
+	if seat == 3 and vehicleName:contains("Base.IFAV") then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger_LeftIFAV")
+		return
+	end
+	if seat == 4 and vehicleName:contains("Base.IFAV") then		
+		player:SetVariable("VehicleScriptName", "Shark_Idle_Passenger_RightIFAV")
 		return
 	end
 end

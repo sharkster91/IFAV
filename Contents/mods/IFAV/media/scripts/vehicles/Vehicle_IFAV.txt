@@ -96,6 +96,11 @@ module Base
 			texture = Vehicles/Vehicle_IFAV,
 		}
 
+		skin
+		{
+			texture = Vehicles/Vehicle_IFAV_RedMERDC,
+		}
+
 		textureRust = Vehicles/Vehicle_GWagen_rust,
 		textureMask = Vehicles/Vehicle_IFAV_mask,
 		textureLights = Vehicles/Vehicle_IFAV_lights,
@@ -113,7 +118,7 @@ module Base
 			ignitionFail = VehicleIgnitionFailSUV,
 		}
 
-		extents = 2.5079 5.1746 6.2857,
+		extents = 2.5079 3.0794 6.5714,
 		mass = 1500,
 		physicsChassisShape = 2.5079 3.0794 6.5714,
 		centerOfMassOffset = 0.0635 1.5556 0.0000,
@@ -185,7 +190,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6190 1.0000 0.0794,
+				offset = 0.6190 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -204,7 +209,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6349 1.0159 0.0952,
+				offset = -0.6349 0.9683 0.0159,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -223,7 +228,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6032 1.1587 -2.6667,
+				offset = -0.6032 1.2698 -2.6190,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -242,7 +247,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5714 1.2381 -2.6667,
+				offset = 0.5714 1.2698 -2.6190,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -266,27 +271,27 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 2.2540 0.9683 2.0000 2.0000,
+			xywh = 2.3175 0.9683 2.0000 2.0000,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.2540 0.9683 2.0000 2.0000,
+			xywh = -2.1905 0.9683 2.0000 2.0000,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.2540 -1.0317 2.0000 2.0000,
+			xywh = -2.1905 -2.3016 2.0000 2.0000,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.2540 -1.0317 2.0000 2.0000,
+			xywh = 2.3175 -2.3016 2.0000 2.0000,
 		}
 
 		area GasTank
 		{
-			xywh = -0.6508 -3.6825 1.0794 1.6190,
+			xywh = -1.7937 -3.0159 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
@@ -425,7 +430,6 @@ module Base
 			parent = DoorFrontLeft,
 			area = SeatFrontLeft,
 		}
-
 
 		part DoorFrontRight
 		{
