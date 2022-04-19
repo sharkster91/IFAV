@@ -513,6 +513,7 @@ module Base
 			}
 		}
 
+		template = WindshieldChassis/part/windshieldextra,
 		template = Bar/part/ExtraBumper,
 		template = Canvas/part/SoftTop,
 		template = Canvas/part/SoftTop2,
