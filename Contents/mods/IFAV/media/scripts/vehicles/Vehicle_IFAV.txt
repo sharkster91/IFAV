@@ -513,6 +513,8 @@ module Base
 			}
 		}
 
+		template = M2HB/part/Mount,
+		template = M2HB/part/M2,
 		template = WindshieldChassis/part/windshieldextra,
 		template = Bar/part/ExtraBumper,
 		template = Canvas/part/SoftTop,
@@ -542,28 +544,28 @@ module Base
 
 			anim Close
 			{
-				anim = DTClosing,
+				anim = DTClosing1,
 				reverse = TRUE,
 				rate = 1.5,
 			}
 
 			anim Open
 			{
-				anim = DTClosing,
+				anim = DTClosing1,
 				reverse = FALSE,
 				rate = 1.0,
 			}
 
 			anim Closed
 			{
-				anim = DTClosing,
+				anim = DTClosing1,
 				reverse = FALSE,
 				animate = FALSE,
 			}
 
 			anim Opened
 			{
-				anim = DTClosing,
+				anim = DTClosing1,
 				reverse = TRUE,
 				animate = FALSE,
 			}

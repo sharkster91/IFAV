@@ -1,0 +1,129 @@
+module Base
+{
+	model m2hb
+	{
+		mesh = vehicles/Vehicle_IFAV|M2HB,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	model m2hbmount
+	{
+		mesh = vehicles/Vehicle_IFAV|Mount,
+		shader = vehicle_noreflect,
+		scale = 1,
+	}
+
+	template vehicle M2HB
+		{
+		part M2
+        	{
+
+			model M2HB
+				{
+                		file = m2hb,
+				}
+		area = TruckBed,
+            category = bodywork,
+            itemType = Base.RearWindshield,
+            mechanicRequireKey = false,
+            window
+            {
+                openable = false,
+            }
+		table install
+            {
+		requireInstalled = Mount,
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+		requireUninstalled = SoftTop2,
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:5,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		}
+
+		part Mount
+        	{
+
+			model Mount
+				{
+                		file = m2hbmount,
+				}
+		area = TruckBed,
+            category = bodywork,
+            itemType = Base.RearWindshield,
+            mechanicRequireKey = false,
+            window
+            {
+                openable = false,
+            }
+		table install
+            {
+		requireUninstalled = SoftTop2,
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:1,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+
+            		table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        type = Base.Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                  skills = Mechanics:5,
+                  recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+		}
+	}	
+	
+}
