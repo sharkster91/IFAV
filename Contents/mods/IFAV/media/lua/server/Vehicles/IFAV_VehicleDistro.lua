@@ -4,6 +4,7 @@ VehicleDistributions.IFAVGloveBox = {
     rolls = 20,
     items ={
         "FirstAidKit", 1,
+        "Crayons ", 0.01,
     }
 }
 
