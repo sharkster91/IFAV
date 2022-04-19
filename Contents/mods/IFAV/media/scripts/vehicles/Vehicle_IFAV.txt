@@ -513,8 +513,6 @@ module Base
 			}
 		}
 
-		template = M2HB/part/Mount,
-		template = M2HB/part/M2,
 		template = WindshieldChassis/part/windshieldextra,
 		template = Bar/part/ExtraBumper,
 		template = Canvas/part/SoftTop,
