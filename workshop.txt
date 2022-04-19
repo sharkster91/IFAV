@@ -9,26 +9,27 @@ description=
 description=The Interim Fast Attack Vehicle (IFAV) is a vehicle that was deployed used by the United States Marine Force Recon and Marine Expeditionary Units as an interim replacement for the M151 MUTT.
 description=The IFAV saw extensive use with the US Marines in conflicts around before its a retirement and replacement by the M1161 Growler in 2009.
 description=
-description=[url=https=https://steamcommunity.com/sharedfiles/filedetails/?id=2791949767[/b] Also check out our Mercedes-Benz G-Series vehicles[/b][/url]
-description=
-description=[b]The mod features a multitude of colors and camouflage schemes: Woodland, MERDC, and Green.[/b]
+description=[url=https=https://steamcommunity.com/sharedfiles/filedetails/?id=2791949767]Mercedes-Benz G-Series[/b][/url]
+description=[url=https=https://steamcommunity.com/sharedfiles/filedetails/?id=2794981937]Mercedes-Benz 290 GD[/b][/url]
+description=[b]The mod features a multitude of colors and camouflage schemes: Woodland, Red Desert MERDC, and Winter Verdant MERDC.[/b]
 description=
 description=[h2][b]Pros:[/b][/h2]
 description=[list]
-description=[*]You get to ride around in a camouflaged Mercedes. 
-description=[*]Medium amount of storage space.
+description=[*]You get to ride around in a camouflaged Mercedes. ttps://steamcommunity.com/sharedfiles/filedetails/?id=2794981937
+description=[*]The vehicle is modular 
 description=[/list]
 description=[h2][b]Cons:[/b][/h2]
 description=[list]
-description=[*]Protection is limited.
 description=[*]Due to its affilation with special operations- it's going to be rare.
+description=[*]Because of its rarirty, replacements will be diffiuclt.
 description=[/list]
 description=
 description=[h3][b]IFAV's will spawn in Military zones, farms, and rarely in car pile ups.[/b][/h3]
 description=
-description=[h2]Future plans:[/h2]
+description=[h2]Future (and proposed) plans:[/h2]
 description=[list]
-description=[*]Vehicle fortifying + attachment plans
+description=[*]More attachments
+description=[*]M2HB 50 Caliber Machine Gun
 description=[/list]
 tags=
 visibility=public
