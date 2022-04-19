@@ -98,16 +98,26 @@ module Base
 
 		skin
 		{
+			texture = Vehicles/Vehicle_IFAVwithGreen,
+		}
+
+		skin
+		{
 			texture = Vehicles/Vehicle_IFAV_RedMERDC,
 		}
 
-		textureRust = Vehicles/Vehicle_GWagen_rust,
+		skin
+		{
+			texture = Vehicles/Vehicle_IFAV_RedMERDCwithSand,
+		}
+
+		textureRust = Vehicles/Vehicle_IFAV_rust,
 		textureMask = Vehicles/Vehicle_IFAV_mask,
 		textureLights = Vehicles/Vehicle_IFAV_lights,
-		textureDamage1Shell = Vehicles/Vehicle_GWagen_damage,
-		textureDamage2Shell= Vehicles/Vehicle_GWagen_damage2,
-		textureDamage1Overlay = Vehicles/Vehicle_GWagen_blood,
-		textureDamage2Overlay = Vehicles/Vehicle_GWagen_blood2,
+		textureDamage1Shell = Vehicles/Vehicle_IFAV_damage,
+		textureDamage2Shell= Vehicles/Vehicle_IFAV_damage2,
+		textureDamage1Overlay = Vehicles/Vehicle_IFAV_blood,
+		textureDamage2Overlay = Vehicles/Vehicle_IFAV_blood2,
 
 		sound
 		{
