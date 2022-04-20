@@ -19,7 +19,7 @@ module Base
 				}
 		area = TruckBed,
             category = bodywork,
-            itemType = Base.RearWindshield,
+            itemType = Base.IFAVWindshieldFrame,
             mechanicRequireKey = false,
 		table install
             {

@@ -405,6 +405,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+			itemType = Base.IFAVWindshield,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -480,6 +481,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			itemType = Base.IFAVDoor,
 		}
 
 		part DoorFrontLeft
@@ -516,6 +518,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+			itemType = Base.IFAVDoor,
 		}
 
 		template = WindshieldChassis/part/windshieldextra,

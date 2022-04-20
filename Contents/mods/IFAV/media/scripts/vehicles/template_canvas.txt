@@ -32,7 +32,7 @@ module Base
 				}
 		area = TruckBed,
             category = bodywork,
-            itemType = Base.RearWindshield,
+            itemType = Base.IFAVFrontTop,
             mechanicRequireKey = false,
             table install
             {
@@ -83,7 +83,7 @@ module Base
 				}
 		area = TruckBed,
             category = bodywork,
-            itemType = Base.RearWindshield,
+            itemType = Base.IFAVRearTop,
             mechanicRequireKey = false,
             table install
             {
@@ -133,7 +133,7 @@ module Base
 				}
 		area = TruckBed,
             category = bodywork,
-            itemType = Base.RearWindshield,
+            itemType = Base.IFAVSideCovers,
             mechanicRequireKey = false,
             table install
             {

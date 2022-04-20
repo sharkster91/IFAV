@@ -18,7 +18,7 @@ module Base
 				}
 		area = TruckBed,
             category = bodywork,
-            itemType = Base.RearWindshield,
+            itemType = Base.IFAVFrontBumper,
             mechanicRequireKey = false,
 		table install
             {
