@@ -4,6 +4,8 @@ description=[b]Support our efforts to bring more military (and other) vehicles i
 description=[url=https://www.buymeacoffee.com/cytt][b]cytt0rak[/b][/url]
 description=[url=https://ko-fi.com/sharkmods][b]Shark[/b][/url]
 description=
+description=[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
+description=
 description=[h2][b]Interim Fast Attack Vehicle[/b][/h2]
 description=
 description=The Interim Fast Attack Vehicle (IFAV) is a vehicle that was deployed used by the United States Marine Force Recon and Marine Expeditionary Units as an interim replacement for the M151 MUTT.
