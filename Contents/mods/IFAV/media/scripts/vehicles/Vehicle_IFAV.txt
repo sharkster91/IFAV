@@ -230,7 +230,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.0476 -1.0000 0.1429,
+				offset = -2.0476 -0.1905 0.1429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -249,7 +249,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.0476 -1.0000 -1.1746,
+				offset = -2.0476 -0.1905 -2.6190,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -268,7 +268,7 @@ module Base
 
 			position outside
 			{
-				offset = 1.9841 -1.0000 -1.1587,
+				offset = 1.9841 -0.1905 -2.5873,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}

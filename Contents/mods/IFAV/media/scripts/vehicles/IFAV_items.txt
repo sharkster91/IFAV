@@ -7,7 +7,7 @@ module Base
         Weight	=	10.0,
         Type	=	Normal,
         DisplayName	=	IFAV Door,
-        Icon	=	CarDoorFront,
+        Icon	=	IFAVDoor,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
@@ -17,49 +17,75 @@ module Base
         item IFAVWindshield
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	15.0,
+        Weight	=	20.0,
         Type	=	Normal,
         DisplayName	=	IFAV Retractable Windshield,
-        Icon	=	CarWindshield,
+        Icon	=	IFAVWindshield,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
         WorldStaticModel = IFAVWindshield_WorldItem,
     }
 
-        item IFAVFrontSoftTop
+        item IFAVWindshieldFrame
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	10.0,
+        Type	=	Normal,
+        DisplayName	=	IFAV Windshield Frame,
+        Icon	=	IFAVWindshieldFrame,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = IFAVWindshieldFrame_WorldItem,
+    }
+
+        item IFAVFrontBumper
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	15.0,
+        Type	=	Normal,
+        DisplayName	=	IFAV Front Bumper,
+        Icon	=	IFAVFrontBumper,
+        VehicleType =   1,
+        ConditionMax = 100,
+        MechanicsItem = TRUE,
+        WorldStaticModel = IFAVFrontBar_WorldItem,
+    }
+
+        item IFAVFrontTop
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
         DisplayName	=	IFAV Front Soft Top,
-        Icon	=	CarWindshield,
+        Icon	=	IFAVFrontTop,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = IFAVWindshield_WorldItem,
+        WorldStaticModel = IFAVFrontTop_WorldItem,
     }
 
-        item IFAVRearSoftTop
+        item IFAVRearTop
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
         Type	=	Normal,
         DisplayName	=	IFAV Rear Soft Top,
-        Icon	=	CarWindshield,
+        Icon	=	IFAVRearTop,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,
-        WorldStaticModel = IFAVWindshield_WorldItem,
+        WorldStaticModel = IFAVRearTop_WorldItem,
     }
     
         item IFAVSideCovers
     {
         DisplayCategory = VehicleMaintenance,
-        Weight	=	40.0,
+        Weight	=	20.0,
         Type	=	Normal,
         DisplayName	=	IFAV Side Covers,
-        Icon	=	CarWindshield,
+        Icon	=	IFAVSideCover,
         VehicleType =   1,
         ConditionMax = 100,
         MechanicsItem = TRUE,

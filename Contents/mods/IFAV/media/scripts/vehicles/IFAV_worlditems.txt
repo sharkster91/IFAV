@@ -15,16 +15,38 @@ module Base
 		scale = 0.5,
 	}
 
-		model IFAVCovers_WorldItem
+		model IFAVWindshieldFrame_WorldItem
 	{
-		mesh = WorldItems/IFAVCovers_WorldItem,
+		mesh = WorldItems/IFAVWindShieldFrame_WorldItem,
 		texture = WorldItems/IFAV,
 		scale = 0.5,
 	}
 
-		model IFAVCanvasCover_WorldItem
+
+		model IFAVFrontBar_WorldItem
 	{
-		mesh = WorldItems/IFAVCanvasCover_WorldItem,
+		mesh = WorldItems/IFAVFrontBar_WorldItem,
+		texture = WorldItems/IFAV,
+		scale = 0.5,
+	}
+
+		model IFAVSideCovers_WorldItem
+	{
+		mesh = WorldItems/IFAVSideCovers_WorldItem,
+		texture = WorldItems/IFAV,
+		scale = 0.5,
+	}
+
+		model IFAVFrontTop_WorldItem
+	{
+		mesh = WorldItems/IFAVFrontTop_WorldItem,
+		texture = WorldItems/IFAV,
+		scale = 0.5,
+	}
+
+		model IFAVRearTop_WorldItem
+	{
+		mesh = WorldItems/IFAVRearTop_WorldItem,
 		texture = WorldItems/IFAV,
 		scale = 0.5,
 	}
