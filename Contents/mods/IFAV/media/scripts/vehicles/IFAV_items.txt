@@ -1,7 +1,7 @@
 module Base
 {
 
-    item IFAVDoor
+    item IFAVDoor2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -14,7 +14,7 @@ module Base
         WorldStaticModel = IFAVDoor_WorldItem,
     }
 
-        item IFAVWindshield
+        item IFAVWindshield2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	20.0,
@@ -27,7 +27,7 @@ module Base
         WorldStaticModel = IFAVWindshield_WorldItem,
     }
 
-        item IFAVWindshieldFrame
+        item IFAVWindshieldFrame2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	10.0,
@@ -40,7 +40,7 @@ module Base
         WorldStaticModel = IFAVWindshieldFrame_WorldItem,
     }
 
-        item IFAVFrontBumper
+        item IFAVFrontBumper2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	15.0,
@@ -53,7 +53,7 @@ module Base
         WorldStaticModel = IFAVFrontBar_WorldItem,
     }
 
-        item IFAVFrontTop
+        item IFAVFrontTop2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
@@ -66,7 +66,7 @@ module Base
         WorldStaticModel = IFAVFrontTop_WorldItem,
     }
 
-        item IFAVRearTop
+        item IFAVRearTop2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	5.0,
@@ -79,7 +79,7 @@ module Base
         WorldStaticModel = IFAVRearTop_WorldItem,
     }
     
-        item IFAVSideCovers
+        item IFAVSideCovers2
     {
         DisplayCategory = VehicleMaintenance,
         Weight	=	20.0,
