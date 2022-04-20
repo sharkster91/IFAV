@@ -131,10 +131,16 @@ module Base
 				{
                 		file = RearCage,
 				}
-		area = TruckBed,
+		area = RearSheet,
             category = bodywork,
             itemType = Base.IFAVSideCovers,
             mechanicRequireKey = false,
+		repairMechanic = true,
+		container
+		{
+				conditionAffectsCapacity = false,
+				test = Vehicles.ContainerAccess.TruckBedOpen,
+		}
             table install
             {
                 items

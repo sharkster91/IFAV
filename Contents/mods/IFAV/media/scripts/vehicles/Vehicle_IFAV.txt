@@ -329,6 +329,11 @@ module Base
 			xywh = -2.0000 -1.0000 0.0000 0.0000,
 		}
 
+		area RearSheet
+		{
+			xywh = -0.0159 -1.4444 5.9048 2.4444,
+		}
+
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearRight,
@@ -405,6 +410,7 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
 			itemType = Base.IFAVWindshield,
 		}
 
@@ -481,6 +487,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			itemType = Base.IFAVDoor,
 		}
 
@@ -518,6 +525,7 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
 			itemType = Base.IFAVDoor,
 		}
 
@@ -527,6 +535,14 @@ module Base
 		template = Canvas/part/SoftTop2,
 		template = Canvas/part/RearSheet,
 		template = TrunkDoor,
+
+		part RearSheet
+		{
+			container
+			{
+				capacity = 40,
+			}
+		}
 
 		part TrunkDoor
 		{
