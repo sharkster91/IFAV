@@ -11,7 +11,9 @@ module Base
 	{
 		mesh = vehicles/Vehicle_IFAV|Windshield_obj,
 		shader = vehicle_noreflect,
+		static = FALSE,
 		scale = 1,
+		boneWeight = FrontWindshieldBone 1.0,
 	}
 	model IFAVwindowfrontright
 	{
@@ -109,6 +111,11 @@ module Base
 		skin
 		{
 			texture = Vehicles/Vehicle_IFAV_RedMERDCwithSand,
+		}
+
+		skin
+		{
+			texture = Vehicles/Vehicle_IFAV_WinVerdantMERDC,
 		}
 
 		textureRust = Vehicles/Vehicle_IFAV_rust,
@@ -225,7 +232,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.0476 -1.0000 0.1429,
+				offset = -2.0476 -0.1905 0.1429,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -244,7 +251,7 @@ module Base
 
 			position outside
 			{
-				offset = -2.0476 -1.0000 -1.1746,
+				offset = -2.0476 -0.1905 -2.6190,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatFrontRight,
 			}
@@ -263,7 +270,7 @@ module Base
 
 			position outside
 			{
-				offset = 1.9841 -1.0000 -1.1587,
+				offset = 1.9841 -0.1905 -2.5873,
 				rotate = 0.0000 0.0000 0.0000,
 				area = SeatRearLeft,
 			}
@@ -324,6 +331,16 @@ module Base
 			xywh = -2.0000 -1.0000 0.0000 0.0000,
 		}
 
+		area RearSheet
+		{
+			xywh = -0.0159 -1.4444 5.9048 2.4444,
+		}
+
+		area convertible
+		{
+			xywh = -0.0159 2.8889 5.9048 2.4444,
+		}
+
 		template = Seat/part/SeatFrontLeft,
 		template = Seat/part/SeatFrontRight,
 		template = Seat/part/SeatRearRight,
@@ -381,6 +398,8 @@ module Base
 				file = IFAVfront,
 			}
 
+			parent = windshieldextra,
+
 			window
 			{
 				openable = false,
@@ -400,6 +419,8 @@ module Base
 			{
 				create = Vehicles.Create.Default,
 			}
+
+			itemType = Base.IFAVWindshield,
 		}
 
 		template = Door/part/DoorFrontLeft,
@@ -475,6 +496,8 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.IFAVDoor,
 		}
 
 		part DoorFrontLeft
@@ -511,16 +534,24 @@ module Base
 				reverse = TRUE,
 				animate = FALSE,
 			}
+
+			itemType = Base.IFAVDoor,
 		}
 
-		template = M2HB/part/Mount,
-		template = M2HB/part/M2,
 		template = WindshieldChassis/part/windshieldextra,
 		template = Bar/part/ExtraBumper,
 		template = Canvas/part/SoftTop,
 		template = Canvas/part/SoftTop2,
 		template = Canvas/part/RearSheet,
 		template = TrunkDoor,
+
+		part RearSheet
+		{
+			container
+			{
+				capacity = 40,
+			}
+		}
 
 		part TrunkDoor
 		{
