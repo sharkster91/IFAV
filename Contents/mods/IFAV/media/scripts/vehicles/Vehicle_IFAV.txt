@@ -207,7 +207,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.6190 0.9683 0.0159,
+				offset = 0.6190 0.9683 0.0952,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -226,7 +226,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6349 0.9683 0.0159,
+				offset = -0.6349 0.9683 0.0952,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -278,57 +278,57 @@ module Base
 
 		area Engine
 		{
-			xywh = 0.0000 4.6032 4.0000 2.0000,
+			xywh = 0.0635 4.0000 2.5079 1.4286,
 		}
 
 		area TruckBed
 		{
-			xywh = 0.0000 -4.2698 2.3492 1.7460,
+			xywh = 0.0635 -4.0000 2.5079 1.4286,
 		}
 
 		area SeatFrontLeft
 		{
-			xywh = 2.3175 0.9683 2.0000 2.0000,
+			xywh = 2.0635 0.6032 1.4921 1.5873,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -2.1905 0.9683 2.0000 2.0000,
+			xywh = -1.9365 0.6032 1.4921 1.5873,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -2.1905 -2.3016 2.0000 2.0000,
+			xywh = -1.9365 -2.3016 1.4921 1.5873,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 2.3175 -2.3016 2.0000 2.0000,
+			xywh = 2.0635 -2.3016 1.4921 1.5873,
 		}
 
 		area GasTank
 		{
-			xywh = -1.7937 -3.0159 1.0794 0.5714,
+			xywh = -1.7302 -3.0000 1.0794 0.5714,
 		}
 
 		area TireFrontLeft
 		{
-			xywh = 1.0000 3.0000 0.0000 0.0000,
+			xywh = 1.0000 2.2222 0.0000 0.0000,
 		}
 
 		area TireFrontRight
 		{
-			xywh = -1.0000 3.0000 0.0000 0.0000,
+			xywh = -1.0000 2.2222 0.0000 0.0000,
 		}
 
 		area TireRearLeft
 		{
-			xywh = 2.0000 -1.0000 0.0000 0.0000,
+			xywh = 1.2540 -2.0635 0.0000 0.0000,
 		}
 
 		area TireRearRight
 		{
-			xywh = -2.0000 -1.0000 0.0000 0.0000,
+			xywh = -1.2540 -2.0635 0.0000 0.0000,
 		}
 
 		area RearSheet
@@ -338,7 +338,7 @@ module Base
 
 		area convertible
 		{
-			xywh = -0.0159 2.8889 5.9048 2.4444,
+			xywh = 0.0635 2.3016 5.4921 1.8095,
 		}
 
 		template = Seat/part/SeatFrontLeft,
