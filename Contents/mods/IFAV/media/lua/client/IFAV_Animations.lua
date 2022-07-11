@@ -38,10 +38,10 @@ local vehicleToSeatAnimations = {
 
     ["Base.IFAV"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["seat1"]="Shark_Idle_Passenger",
-		["seat2"]="Shark_Idle_SidePassenger",
-		["seat3"]="Shark_Idle_SidePassenger",
+		["seat1"]={"Shark_Idle_Passenger",},
+		["passenger"]={"Shark_Idle_Passenger",},
     },
+
 }
 
 ---@param player IsoPlayer|IsoGameCharacter
@@ -60,7 +60,7 @@ local function Vehicle_Enter(player)
     local vehicleAnimation = vehicleToSeatAnimations[vehicleName]
     if not vehicleAnimation then return end
 
-    local fetchedAnimation = vehicleAnimation["seat"..seat]
+    local fetchedAnimation = vehicleAnimation["seat"..seat] or vehicleAnimation["passenger"]
     if not fetchedAnimation then return end
 
     fetchedAnimation = parseSeatAnimationSelection(fetchedAnimation)
@@ -70,6 +70,7 @@ local function Vehicle_Enter(player)
         player:SetVariable("VehicleScriptName", fetchedAnimation)
     end
 end
+
 
 Events.OnEnterVehicle.Add(Vehicle_Enter)
 Events.OnSwitchVehicleSeat.Add(Vehicle_Enter)
