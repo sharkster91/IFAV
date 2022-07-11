@@ -46,28 +46,30 @@ local vehicleToSeatAnimations = {
 
 ---@param player IsoPlayer|IsoGameCharacter
 local function Vehicle_Enter(player)
-	---@type BaseVehicle
-	local vehicle = player:getVehicle()
-	if not vehicle then return end
+    ---@type BaseVehicle
+    local vehicle = player:getVehicle()
+    if not vehicle then return end
 
-	local vehicleName = vehicle:getScriptName()
-	print("SC_ANIM: DEBUG: "..vehicleName)
+    local vehicleName = vehicle:getScriptName()
+    print("SC_ANIM: DEBUG: "..vehicleName)
 
-	local seat = vehicle:getSeat(player)
-	print(" -- Seat: "..seat)
-	if not seat then return end
+    local seat = vehicle:getSeat(player)
+    print(" -- Seat: "..seat)
+    if not seat then return end
 
-	local vehicleAnimation = vehicleToSeatAnimations[vehicleName] or vehicleToSeatAnimations["DEFAULT"]
+    local vehicleAnimation = vehicleToSeatAnimations[vehicleName]
+    if not vehicleAnimation then return end
 
-	local fetchedAnimation = vehicleAnimation["seat"..seat] or vehicleAnimation["passenger"]
-	fetchedAnimation = parseSeatAnimationSelection(fetchedAnimation)
-	print(" ---- Anim Selected: "..fetchedAnimation)
+    local fetchedAnimation = vehicleAnimation["seat"..seat]
+    if not fetchedAnimation then return end
 
-	if fetchedAnimation then
-		player:SetVariable("VehicleScriptName", fetchedAnimation)
-	end
+    fetchedAnimation = parseSeatAnimationSelection(fetchedAnimation)
+    print(" ---- Anim Selected: "..fetchedAnimation)
+
+    if fetchedAnimation then
+        player:SetVariable("VehicleScriptName", fetchedAnimation)
+    end
 end
-
 
 Events.OnEnterVehicle.Add(Vehicle_Enter)
 Events.OnSwitchVehicleSeat.Add(Vehicle_Enter)
