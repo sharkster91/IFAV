@@ -36,12 +36,12 @@ end
 
 local vehicleToSeatAnimations = {
 
-    ["Base.IFAV"] = {
+	["Base.IFAV"] = {
         ["seat0"]="Bob_Idle_Driver",
-		["passenger"]={"Shark_Idle_Passenger",},
-		["seat2"]={"Shark_Idle_SidePassenger",},
-		["seat3"]={"Shark_Idle_SidePassenger2",},
-    },
+		["seat1"]="Shark_Idle_Passenger",
+        ["seat2"]="Shark_Idle_SidePassenger",
+		["seat3"]="Shark_Idle_SidePassenger2",
+	},
 
 }
 

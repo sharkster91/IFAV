@@ -245,7 +245,7 @@ module Base
 
 			position inside
 			{
-				offset = -0.6032 1.2698 -2.7302,
+				offset = -0.6032 1.2698 -2.6667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
@@ -264,7 +264,7 @@ module Base
 
 			position inside
 			{
-				offset = 0.5714 1.2698 -2.7302,
+				offset = 0.5714 1.2698 -2.6667,
 				rotate = 0.0000 0.0000 0.0000,
 			}
 
